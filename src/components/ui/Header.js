@@ -28,7 +28,7 @@ function Header() {
                 {/* AppBar default = fixed */}
                 <AppBar>
                     <Toolbar>
-                        Sharian Development
+                        Sharian Development Project
                     </Toolbar>
                 </AppBar>
             </ElevationScroll>
