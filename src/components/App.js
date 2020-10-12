@@ -1,11 +1,16 @@
 import React from 'react';
-import '../App.css';
 import Header from "./ui/Header";
+import Body from "./ui/Body";
+import custom from "./ui/custom.css"
+
 
 function App() {
     return (
         <>
-          <Header/>
+            <div className={custom.bg}>
+                <Header/>
+                <Body/>
+            </div>
         </>
     );
 }

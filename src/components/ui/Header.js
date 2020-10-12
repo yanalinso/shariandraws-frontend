@@ -2,6 +2,8 @@ import React from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
+import {Typography} from "@material-ui/core";
+import Button from "@material-ui/core/Button";
 
 
 function ElevationScroll(props) {
@@ -20,15 +22,19 @@ function ElevationScroll(props) {
     });
 }
 
+
 function Header() {
     return (
         <>
             {/* ElevationScroll add a scrolling effect */}
             <ElevationScroll>
                 {/* AppBar default = fixed */}
-                <AppBar>
+                <AppBar position="static">
                     <Toolbar>
-                        Sharian Development Project
+                        <Typography variant="h4">
+                            Sharian Development Project
+                        </Typography>
+                        <Button   color="inherit">Login</Button>
                     </Toolbar>
                 </AppBar>
             </ElevationScroll>
