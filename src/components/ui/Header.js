@@ -31,10 +31,7 @@ function Header() {
                 {/* AppBar default = fixed */}
                 <AppBar position="static">
                     <Toolbar>
-                        <Typography variant="h4">
                             Sharian Development Project
-                        </Typography>
-                        <Button   color="inherit">Login</Button>
                     </Toolbar>
                 </AppBar>
             </ElevationScroll>
