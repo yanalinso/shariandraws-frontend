@@ -18,14 +18,16 @@ function Footer() {
     const classes = useStyles()
     return (
         <>
-            <AppBar position="fixed" color="primary" className={classes.appBar}>
-                <Toolbar>
-                    <Grid container justify="center">
-                        This webpage is still on development
-                    </Grid>
+            <div>
+                <AppBar position="fixed" color="primary" className={classes.appBar}>
+                    <Toolbar>
+                        <Grid container justify="center">
+                            This website is still on development
+                        </Grid>
 
-                </Toolbar>
-            </AppBar>
+                    </Toolbar>
+                </AppBar>
+            </div>
         </>
     )
 }
