@@ -24,7 +24,7 @@ function Body() {
     const classes = useStyles()
     return (
         <>
-            <Container maxWidth>
+            <Container maxWidth={false}>
                 <Grid container justify='center' className={classes.root}>
                     <Typography variant="h2">
                         Inktober

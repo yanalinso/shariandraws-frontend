@@ -2,8 +2,9 @@ import React from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
-import {Typography} from "@material-ui/core";
-import Button from "@material-ui/core/Button";
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+import makeStyles from "@material-ui/core/styles/makeStyles";
 
 
 function ElevationScroll(props) {
@@ -22,16 +23,31 @@ function ElevationScroll(props) {
     });
 }
 
+const useStyles = makeStyles((theme) => ({
+    tabContainer:{
+        marginLeft: "auto"
+    },
+    tab:{
+        minWidt: 5,
+        marginLeft: "1%"
+    }
+}));
 
 function Header() {
+    const classes = useStyles()
     return (
         <>
             {/* ElevationScroll add a scrolling effect */}
             <ElevationScroll>
                 {/* AppBar default = fixed */}
-                <AppBar position="static">
+                <AppBar>
                     <Toolbar>
-                            Sharian Development Project
+                        Sharian Development Project
+
+                        <Tabs className={classes.tabContainer}>
+                            <Tab label="About Us"/>
+                            <Tab label="Login"/>
+                        </Tabs>
                     </Toolbar>
                 </AppBar>
             </ElevationScroll>
